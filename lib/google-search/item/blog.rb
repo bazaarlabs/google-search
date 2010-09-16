@@ -15,7 +15,7 @@ module Google
         attr_reader :author
         
         ##
-        # Published DateTime.
+        # Published Time.
         
         attr_reader :published
         
@@ -26,7 +26,7 @@ module Google
           super
           @author = hash['author']
           @blog_uri = hash['blogUrl']
-          @published = DateTime.parse hash['publishedDate']
+          @published = Time.parse hash['publishedDate']
         end
       end
     end

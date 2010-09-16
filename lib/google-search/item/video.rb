@@ -20,7 +20,7 @@ module Google
         attr_reader :publisher
         
         ##
-        # Published DateTime.
+        # Published Time.
         
         attr_reader :published
         
@@ -37,7 +37,7 @@ module Google
           @rating = hash['rating'].to_f
           @type = hash['videoType']
           @publisher = hash['publisher']
-          @published = DateTime.parse hash['published']
+          @published = Time.parse hash['published']
           @duration = hash['duration'].to_i
         end
       end

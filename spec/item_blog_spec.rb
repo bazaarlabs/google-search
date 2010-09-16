@@ -11,7 +11,7 @@ describe Google::Search::Item::Blog do
       item.uri.should == 'http://www.kaieteurnewsonline.com/2009/07/22/foo-51-amsterdam-4-12-shine-for-guyana-on-opening-day/'
       item.blog_uri.should == 'http://www.kaieteurnewsonline.com/'
       item.content.should include('Jonathon')
-      item.published.should be_a(DateTime)
+      item.published.should be_a(Time)
     end
   end
 end

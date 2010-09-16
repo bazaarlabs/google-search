@@ -20,7 +20,7 @@ module Google
         attr_reader :assignee
         
         ##
-        # Application DateTime.
+        # Application Time.
         
         attr_reader :application_date
         
@@ -30,7 +30,7 @@ module Google
         def initialize hash
           super
           @id = hash['patentNumber'].to_i
-          @application_date = DateTime.parse hash['applicationDate']
+          @application_date = Time.parse hash['applicationDate']
           @assignee = hash['assignee']
           @status = hash['patentStatus']
         end

@@ -11,7 +11,7 @@ describe Google::Search::Item::Video do
       item.uri.should == 'http://www.google.com/url?q=http://www.youtube.com/watch%3Fv%3DTVboOdX9icA&source=video&vgc=rss&usg=AFQjCNFvZftyyTO-IswoCPWEmmQbskBMRA'
       item.rating.should == 4.9076071
       item.type.should == 'YouTube'
-      item.published.should be_a(DateTime)
+      item.published.should be_a(Time)
       item.thumbnail_uri.should == 'http://0.gvt0.com/vi/TVboOdX9icA/default.jpg'
       item.publisher.should == 'www.youtube.com'
       item.duration.should == 269

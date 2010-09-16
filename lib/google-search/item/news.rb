@@ -5,7 +5,7 @@ module Google
       class News < self
         
         ##
-        # Published DateTime.
+        # Published Time.
         
         attr_reader :published
         
@@ -35,7 +35,7 @@ module Google
         def initialize hash
           super
           @location = hash['location']
-          @published = DateTime.parse hash['publishedDate']
+          @published = Time.parse hash['publishedDate']
           @language = hash['language']
           @publisher = hash['publisher']
           @redirect_uri = hash['signedRedirectUrl']

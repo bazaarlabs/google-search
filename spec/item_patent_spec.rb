@@ -10,7 +10,7 @@ describe Google::Search::Item::Patent do
       item.id.should == 3468158
       item.content.should include('METHOD OF AND APPARATUS FOR DETERMINING RH')
       item.assignee.should == ''
-      item.application_date.should be_a(DateTime)
+      item.application_date.should be_a(Time)
       item.uri.should == 'http://www.google.com/patents/about?id=GDMdAAAAEBAJ&dq=foo&client=internal-uds&source=uds'
       item.thumbnail_uri.should == 'http://bks9.books.google.com/patents?id=GDMdAAAAEBAJ&printsec=drawing&img=1&zoom=1&sig=ACfU3U10b3w-4hMfKTEykPmtqnoObaLhaA'
       item.status.should == 'issued'
