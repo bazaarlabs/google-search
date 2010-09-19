@@ -182,7 +182,7 @@ module Google
     
     def self.size_for sym
       { :small => 4,
-        :large => 100 }[sym]
+        :large => 8 }[sym]
     end
     
     #:nodoc:
